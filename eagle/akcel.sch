@@ -14533,7 +14533,7 @@ Source: www.cypressindustries.com</description>
 <part name="C1" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
 <part name="C2" library="rcl" deviceset="CPOL-EU" device="085CS-1AR" value="2.2uF"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
-<part name="LI-ION" library="special" deviceset="BATTERY" device="" value="3.6V"/>
+<part name="LI-ION" library="special" deviceset="BATTERY" device="" value="3.8V"/>
 <part name="LED1" library="led" deviceset="LED" device="10MM"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0204/2V" value="10k"/>
 <part name="SW1" library="switch-coto" deviceset="CT10-XXXX-" device="A2" value=""/>
@@ -14793,6 +14793,15 @@ Source: www.cypressindustries.com</description>
 <junction x="38.1" y="104.14"/>
 <label x="27.94" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="BAT"/>
+<wire x1="73.66" y1="142.24" x2="81.28" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="142.24" x2="81.28" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="142.24" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
+<junction x="81.28" y="142.24"/>
+<label x="81.28" y="170.18" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -14858,15 +14867,6 @@ Source: www.cypressindustries.com</description>
 <pinref part="IC1" gate="G$1" pin="CE"/>
 <wire x1="73.66" y1="149.86" x2="76.2" y2="149.86" width="0.1524" layer="91"/>
 <label x="76.2" y="172.72" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="BAT"/>
-<wire x1="73.66" y1="142.24" x2="81.28" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="142.24" x2="81.28" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="142.24" x2="81.28" y2="172.72" width="0.1524" layer="91"/>
-<junction x="81.28" y="142.24"/>
-<label x="81.28" y="172.72" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="LED4" gate="G$1" pin="A"/>

@@ -21,7 +21,8 @@ slave_addr = 0x68
 
 data = bytearray(6)
 data_list = []
-const= 4.0 / 32768
+const = 4.0 / 32768
+
 
 def unsigned_to_signed(value):
     if value > 32767:
@@ -29,8 +30,10 @@ def unsigned_to_signed(value):
     else:
         return value
 
+
 def callback_exti(p):
     pass
+
 
 def callback_tim(t):
     i2c.readfrom_mem_into(slave_addr, accel_out, data)
